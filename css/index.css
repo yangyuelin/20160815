@@ -1,0 +1,258 @@
+/* 
+	set overflow-y property to prevent scroll bar mess up the whole layout
+*/
+body {
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+	color: #fff;
+}
+.logo {
+	position: relative;
+	background: url(../images/logo.png);
+	width: 200px;
+	height: 120px;
+	display: block;
+	top: 40px;
+	left: 40px;
+	cursor: pointer;
+	z-index: 99;
+	/*漸出*/
+	transition-duration: 1.5s;
+	-webkit-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+}
+.logo:hover {
+	background: url(../images/logo_hover.png);
+}
+.slogan {
+	background: url(../images/slogan.png);
+	width: 700px;
+	height: 170px;
+	position: relative;
+	z-index: 50;
+	left: 30%;
+	top: 130px;
+	margin-left: -275px;
+}
+/* styled just for clear visual division of each areas */
+.op-section {
+	color: #000;
+}
+.first {
+	background: url(../images/bg1.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.second {
+	background: url(../images/bg2.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.third {
+	background: url(../images/bg3.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.fourth {
+	background: url(../images/bg4.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.fifth {
+	background: url(../images/bg5.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.last {
+	background: url(../images/bg6.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+/* 按鈕 */
+#radioWrap {
+	background: url(../images/box.png);
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	/* margin-top: -90px; */
+	height: 100%;
+}
+#radio {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	top: 20%;
+}
+/* 共用寬度*/
+#radioOn, #radio li {
+	width: 200px;
+	height: 40px;
+	margin-bottom: 15px;
+	color: #C5C5C5;
+}
+#radio li {
+	position: relative;
+	text-align: right;
+	line-height: 40px;
+	cursor: pointer;
+	z-index: 10;
+}
+#radio li span {
+	font-size: 20px;
+	padding: 25px;
+}
+#radio li:first-child {
+	margin-top: 0;
+}
+/* 
+	set position to absolute(essential).
+	use margin to adjust gaps between LIs because ApplikeOnePage.js uses .outerHeight(true) method
+	to measure the interval gap to which each radio buttons are placed.
+*/
+#radioOn {
+	border-radius: 20px 0px 0px 20px;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 5;
+}
+/*---------------------------
+	 內容
+----------------------------*/
+#text_box {
+	position: relative;
+	height: 60%;
+	width: 55%;
+	top: 5%;
+	left: 10%;
+	overflow: auto;
+}
+#text_box2 {
+	position: relative;
+	height: 60%;
+	width: 55%;
+	top: 5%;
+	left: 10%;
+	overflow: auto;
+}
+h1 {
+	font-size: 4em;
+	margin-left: 10%;
+	padding-top: 100px;
+	left: 10%;
+	color: #F00;
+}
+h2 {
+	font-size: 2em;
+	margin: 15px 0;
+	color: #9E0000;
+}
+h3 {
+	text-align: center;
+	
+}
+#text_box p {
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+.img {
+	display: block;
+	margin: 30px auto;
+}
+#text_box span {
+    text-align: center;
+    display: block;
+    color: #FFE000;
+    font-size: 2em;
+}
+
+.btn {
+	text-align: center;
+	font-size: 2em;
+	color:#FF3;
+	    display: block;
+}
+.btn:hover {
+	
+	color: #F00;
+}
+/*---------------------------
+	FOOTER
+----------------------------*/
+
+#footer {
+	font-family: '新細明體';
+	width: 100%;
+	color: #000;
+	font-size: 12px;
+	position: fixed;
+	bottom: 0;
+}
+.copyright {
+	width: 1000px;
+	height: 90px;
+	margin: 0 auto;
+	position: relative;
+	top: 20px;
+}
+.copyright table {
+	margin: 0 auto 0 auto
+}
+.copyright table td {
+	padding-right: 8px
+}
+.copyright .about {
+	line-height: 20px;
+}
+.copyright table span {
+	color: #00E1FF;
+}
+.copyright table .t {
+	font-size: 11px;
+	line-height: 15px;
+}
+/*---------------------------
+	IE提示
+----------------------------*/
+
+#alert-ie8 {
+	background: rgba(0, 0, 0, 0.6);
+	background: url(../images/bg.png)\0;
+	clear: both;
+	display: block;
+	font-size: 15px;
+	height: 20px;
+	letter-spacing: 1px;
+	padding: 5px;
+	position: fixed;
+	text-align: center;
+	top: 0px;
+	width: 100%;
+	z-index: 1000;
+	left: 50%;
+	margin-left: -50%;
+	color: #FFF;
+}
+#alert-ie8 a:link, #alert-ie8 a:visited {
+	color: #FC3;
+}
+#alert-ie8 a:hover {
+	color: #FF0;
+}
+#alert-ie8 strong {
+	color: #F00;
+}
